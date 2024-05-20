@@ -1,3 +1,4 @@
+alert("Solo hacemos envíos a Santa Fe, Buenos Aires o Cordoba")
 let permanecerLoopProvincia = true;
 
 while (permanecerLoopProvincia) {
@@ -13,6 +14,10 @@ while (permanecerLoopProvincia) {
         designarCostoEnvioBsAs();
         permanecerLoopProvincia = false
         break;
+    case "cordoba":
+        designarCostoEnvioCordoba();
+        permanecerLoopProvincia = false
+    break;
     case "salir":
         permanecerLoopProvincia = false
         break;
@@ -55,6 +60,25 @@ function designarCostoEnvioBsAs() {
             permanecerLoop = false;
         } else if (confirmacionCiudad == "no"){
             alert("El envío cuesta $3600");
+            permanecerLoop = false;
+        } else {
+            alert("Debe responder con si o no");
+        };
+    };
+};
+
+function designarCostoEnvioCordoba() {
+    let permanecerLoop = true;
+    while (permanecerLoop) {
+        
+        let confirmacionCiudad = prompt("El envío es para Cordoba ciudad? SI / NO");
+        confirmacionCiudad = confirmacionCiudad.toLowerCase();
+
+        if (confirmacionCiudad == "si") {
+            alert("El envío cuesta $3500");
+            permanecerLoop = false;
+        } else if (confirmacionCiudad == "no"){
+            alert("El envío cuesta $4000");
             permanecerLoop = false;
         } else {
             alert("Debe responder con si o no");

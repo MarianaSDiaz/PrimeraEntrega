@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="CSS/stylesheet.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DrillRide Argentina | Home</title>
-</head>
-<body>
-    <header>
-        
-    </header>
-    <script src="JS/script.js"></script>
-</body>
+    <head>
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DrillRide Argentina | Pantalla de pago</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <a href="" class="DrillRideLogo">
+                    <img src="" alt="DrillRideLogo">
+                </a>
+                <div class="header-icons">
+                    <a href="" class="header-icons">
+                        <img src="./img/usuario.png" alt="usericon">
+                    </a>
+                    <a href="" class="header-icons">
+                        <img src="./img/menu.png" alt="menuicon">
+                    </a>
+                </div>
+                <div class="search-button">
+                    <input type="search" placeholder="Search">
+                    <button type="button"></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div>
+                    <p class="titulos">
+                        Contacto
+                    </p>
+                    <input class="input" name="email" type="email" placeholder="Correo electronico">
+                </div>
+                <div>
+                    <p class="titulos">
+                        Entrega
+                    </p>
+                    <select name="pais" id="select">
+                        <option value="Argentina">
+                            Argentina
+                        </option>
+                    </select>
+                    <select name="Provincia" id="provincia">
+                        <option value="SantaFe">
+                            Santa Fe
+                        </option>
+                        <option value="Cordoba">
+                            Cordoba
+                        </option>
+                        <option value="BuenosAires">
+                            Buenos Aires
+                        </option>
+                    </select>
+                    <select name="Ciudad" id="ciudad">
+                        <option value="ciudad" class="opciones-ciudad">
+
+                        </option>
+                    </select>
+                    <p class="descripcion-ciudad">
+
+                    </p>
+                </div>
+                <div>
+                    <p id="totalEnvio" class="titulos">
+                        Total de envío:
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script src="JS/script.js"></script>
+    </body>
 </html>

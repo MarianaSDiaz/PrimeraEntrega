@@ -8,9 +8,9 @@
     </head>
     <body>
         <header>
-            <div class="header-container">
+            <div id="header-container">
                 <a href="" class="DrillRideLogo">
-                    <img src="" alt="DrillRideLogo">
+                    <img src="/img/casco-de-carreras.png" alt="DrillRideLogo">
                 </a>
                 <div class="header-icons">
                     <a href="" class="header-icons">
@@ -22,41 +22,46 @@
                 </div>
                 <div class="search-button">
                     <input type="search" placeholder="Search">
-                    <button type="button"></button>
+                    <button type="button" name="search"></button>
                 </div>
             </div>
         </header>
         <main>
             <div>
-                <div>
+                <div id="contacto">
                     <p class="titulos">
                         Contacto
                     </p>
-                    <input class="input" name="email" type="email" placeholder="Correo electronico">
+                    <p id="parrafoEmail">
+
+                    </p>
                 </div>
                 <div>
                     <p class="titulos">
-                        Entrega
+                        Envío
                     </p>
-                    <select name="pais" id="select">
+                    <select name="pais" id="select" >
                         <option value="Argentina">
                             Argentina
                         </option>
                     </select>
-                    <select name="Provincia" id="provincia">
-                        <option value="SantaFe">
+                    <select name="Provincia" id="provincia" onchange="cambiarProvincia()">
+                        <option value="santaFe">
                             Santa Fe
                         </option>
-                        <option value="Cordoba">
+                        <option value="cordoba">
                             Cordoba
                         </option>
-                        <option value="BuenosAires">
+                        <option value="buenosAires">
                             Buenos Aires
                         </option>
                     </select>
-                    <select name="Ciudad" id="ciudad">
-                        <option value="ciudad" class="opciones-ciudad">
-
+                    <select name="Ciudad" id="ciudad" onchange="cambiarCiudad()">
+                        <option value="rosario" id="op0">
+                            Rosario
+                        </option>
+                        <option value="otros" id="op1">
+                            Otros
                         </option>
                     </select>
                     <p class="descripcion-ciudad">
@@ -65,7 +70,7 @@
                 </div>
                 <div>
                     <p id="totalEnvio" class="titulos">
-                        Total de envío:
+                        Total de envío: $0
                     </p>
                 </div>
             </div>

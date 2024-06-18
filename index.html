@@ -1,80 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="CSS/stylesheet.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DrillRide Argentina | Pantalla de pago</title>
-    </head>
-    <body>
-        <header>
-            <div id="header-container">
-                <a href="" class="DrillRideLogo">
-                    <img src="/img/casco-de-carreras.png" alt="DrillRideLogo">
-                </a>
-                <div class="header-icons">
-                    <a href="" class="header-icons">
-                        <img src="./img/usuario.png" alt="usericon">
-                    </a>
-                    <a href="" class="header-icons">
-                        <img src="./img/menu.png" alt="menuicon">
-                    </a>
-                </div>
-                <div class="search-button">
-                    <input type="search" placeholder="Search">
-                    <button type="button" name="search"></button>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div>
-                <div id="contacto">
-                    <p class="titulos">
-                        Contacto
-                    </p>
-                    <p id="parrafoEmail">
+<html lang="es-AR">
 
-                    </p>
-                </div>
-                <div>
-                    <p class="titulos">
-                        Envío
-                    </p>
-                    <select name="pais" id="select" >
-                        <option value="Argentina">
-                            Argentina
-                        </option>
-                    </select>
-                    <select name="Provincia" id="provincia" onchange="cambiarProvincia()">
-                        <option value="santaFe">
-                            Santa Fe
-                        </option>
-                        <option value="cordoba">
-                            Cordoba
-                        </option>
-                        <option value="buenosAires">
-                            Buenos Aires
-                        </option>
-                    </select>
-                    <select name="Ciudad" id="ciudad" onchange="cambiarCiudad()">
-                        <option value="rosario" id="op0">
-                            Rosario
-                        </option>
-                        <option value="otros" id="op1">
-                            Otros
-                        </option>
-                    </select>
-                    <p class="descripcion-ciudad">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript | Comisión #57705</title>
+</head>
 
-                    </p>
-                </div>
-                <div>
-                    <p id="totalEnvio" class="titulos">
-                        Total de envío: $0
-                    </p>
-                </div>
-            </div>
-        </main>
-        <script src="JS/script.js"></script>
-    </body>
+<body>
+    <header id="header"></header>
+    <button id="toggle-button">Cambiar a modo oscuro</button>
+    <main>
+        <h1>Inicio</h1>
+        <section id="gallery">
+            <ul class="slide"></ul>
+            <section class="botonera">
+                <button class="control icon-prev">Prev</button>
+                <button class="control icon-next">Next</button>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- Aca pongo los Script de JS -->
+    <script src="js/global.js"></script>
+    <script src="js/navegacion.js"></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/operadores.js"></script> -->
+    <!-- Scripts de JS  -->
+</body>
+
 </html>

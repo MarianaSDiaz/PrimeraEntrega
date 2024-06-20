@@ -10,7 +10,7 @@ function createGallery() {
     imagenes.forEach((img, index) => {
         const li = document.createElement('li');
         const image = document.createElement('img');
-        image.src = `img/${img}.webp`;
+        image.src = `./img/${img}.jpg`;
         image.alt = `img ${index + 1}`;
         li.appendChild(image);
         if (index === 0) {

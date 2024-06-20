@@ -1,9 +1,33 @@
-let nombreUsuario = prompt("Ingrese el email de contacto:");
-const parrafoEmail = document.getElementById("parrafoEmail");
-parrafoEmail.innerText = "La factura de tu compra se enviará al mail " + nombreUsuario;
+const muestraDeCompra = document.createElement('div')
+const divDeCompra = document.getElementById('compra');
 
+document.addEventListener('DOMContentLoaded', function() {
+    showCartAndTotal();
+});
 
-alert("Solo hacemos envíos a Santa Fe, Buenos Aires o Cordoba")
+// Cargar el carrito y calcular el total al cargar la página
+function showCartAndTotal() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const total = calcularTotal(cart);
+
+    let cartHTML = '';
+    cart.forEach(item => {
+        cartHTML += `<p>${item.nombre} - ${item.precio}</p>`;
+        console.log(cartHTML);
+    });
+
+    muestraDeCompra.innerHTML = cartHTML;
+    divDeCompra.appendChild(muestraDeCompra);
+    document.getElementById('total-carrito').textContent = `Total: $${total.toFixed(2)}`;
+}
+
+function calcularTotal(cart) {
+    let total = 0;
+    cart.forEach(item => {
+        total += item.precio;
+    });
+    return total;
+}
 
 
 function cambiarProvincia() {

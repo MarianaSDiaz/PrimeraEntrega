@@ -1,71 +1,14 @@
-/*body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-};
-
-#header-container {
-    margin: 50 auto;
-    width: 95%;
-    display: inline;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-}
-
-.header-icons img {
-    width: 20px;
-}*/
-
-header {
+#div-general{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #adadad; 
-}
-
-#header-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-}
-
-.DrillRideLogo{
-    display: flex;
-}
-/* Estilos para el logotipo */
-.DrillRideLogo img {
-    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-/* Estilos para los iconos en el encabezado */
-.header-icons a {
-    margin-left: 10px; /* Espaciado entre los iconos */
-}
-
-.header-icons img{
-    width: 25px;
-}
-
-/* Estilos para el botón de búsqueda */
-.search-button {
-    margin-left: auto; /* Mueve el botón de búsqueda al extremo derecho */
-}
-
-.search-button input[type="search"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.search-button button[type="button"] {
-    padding: 15px 30px;
-    background-color: #7e7e7e; /* Color de fondo del botón de búsqueda */
-    color: #fff; /* Color del texto del botón de búsqueda */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #555555;
+    font-size: large;
 }

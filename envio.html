@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="CSS/index.css">
         <link rel="stylesheet" href="CSS/stylesheet.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DrillRide Argentina | Pantalla de pago</title>
     </head>
     <body>
-        <header>
-            <div id="header-container">
-                <a href="" class="DrillRideLogo">
-                    <img src="/img/casco-de-carreras.png" alt="DrillRideLogo">
-                </a>
-                <div class="header-icons">
-                    <a href="" class="header-icons">
-                        <img src="./img/usuario.png" alt="usericon">
-                    </a>
-                    <a href="" class="header-icons">
-                        <img src="./img/menu.png" alt="menuicon">
-                    </a>
-                </div>
-                <div class="search-button">
-                    <input type="search" placeholder="Search">
-                    <button type="button" name="search"></button>
-                </div>
-            </div>
-        </header>
+        <header id="header"></header>
         <main>
-            <div>
-                <div id="contacto">
+            <h1>DrillRide</h1>
+            <div id="div-general">
+                <div id="compra">
                     <p class="titulos">
-                        Contacto
+                        Productos del carrito
                     </p>
-                    <p id="parrafoEmail">
-
-                    </p>
+                    <div id="total-carrito"></div>
                 </div>
                 <div>
                     <p class="titulos">
@@ -75,6 +57,12 @@
                 </div>
             </div>
         </main>
-        <script src="JS/envio.js"></script>
+        <footer></footer>
+        <!-- Aca pongo los Script de JS -->
+        <script src="js/global.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/envio.js"></script>
     </body>
-</html>
+    
+    </html>
+    

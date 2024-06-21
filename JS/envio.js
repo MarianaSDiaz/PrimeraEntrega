@@ -1,7 +1,44 @@
 const muestraDeCompra = document.createElement('div')
 const divDeCompra = document.getElementById('compra');
 
-document.addEventListener('DOMContentLoaded', function() {
+
+
+let cart = loadCartFromLocalStorage();
+function renderCart() {
+    const totalCart = document.getElementById('total-carrito');
+    totalCart.innerHTML = '';
+
+    let totalCartPrice = 0; // Inicializar precio total
+
+    if (cart.length !== 0) {
+            cart.forEach(item => {
+            const cartItemDiv = document.createElement('div');
+            cartItemDiv.innerHTML = `
+                <p>Cantidad: ${item.quantity}, Nombre: ${item.name}, Precio Total: $${item.totalPrice}</p>
+            `;
+            totalCart.appendChild(cartItemDiv);
+
+            totalCartPrice += item.totalPrice;
+        });
+
+        //Creador del div para total de compra
+        const totalDiv = document.createElement('div');
+        totalDiv.innerHTML = `<p><strong>Total del carrito:</strong> $${totalCartPrice}<p>`;
+        totalCart.appendChild(totalDiv);
+
+    };
+};
+
+function loadCartFromLocalStorage() {
+    const cartData = localStorage.getItem('cart');
+    return cartData ? JSON.parse(cartData) : [];
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderCart();
+});
+
+/*document.addEventListener('DOMContentLoaded', function() {
     showCartAndTotal();
 });
 
@@ -27,7 +64,7 @@ function calcularTotal(cart) {
         total += item.precio;
     });
     return total;
-}
+}*/
 
 
 function cambiarProvincia() {

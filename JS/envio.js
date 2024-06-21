@@ -1,8 +1,3 @@
-const muestraDeCompra = document.createElement('div')
-const divDeCompra = document.getElementById('compra');
-
-
-
 let cart = loadCartFromLocalStorage();
 function renderCart() {
     const totalCart = document.getElementById('total-carrito');
@@ -37,35 +32,6 @@ function loadCartFromLocalStorage() {
 document.addEventListener('DOMContentLoaded', () => {
     renderCart();
 });
-
-/*document.addEventListener('DOMContentLoaded', function() {
-    showCartAndTotal();
-});
-
-// Cargar el carrito y calcular el total al cargar la página
-function showCartAndTotal() {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const total = calcularTotal(cart);
-
-    let cartHTML = '';
-    cart.forEach(item => {
-        cartHTML += `<p>${item.nombre} - ${item.precio}</p>`;
-        console.log(cartHTML);
-    });
-
-    muestraDeCompra.innerHTML = cartHTML;
-    divDeCompra.appendChild(muestraDeCompra);
-    document.getElementById('total-carrito').textContent = `Total: $${total.toFixed(2)}`;
-}
-
-function calcularTotal(cart) {
-    let total = 0;
-    cart.forEach(item => {
-        total += item.precio;
-    });
-    return total;
-}*/
-
 
 function cambiarProvincia() {
     let provincia = document.getElementById("provincia").value;

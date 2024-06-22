@@ -101,8 +101,6 @@ const buyButtonDiv = document.getElementById('buy-button-div');
 const buyButtonNewDiv = document.createElement('div');
 
 function buyButton(){
-    //const buyButtonDiv = document.getElementById('buy-button-div');
-    //const buyButtonNewDiv = document.createElement('div');
     if (cart.length === 0) {
         buyButtonNewDiv.innerHTML = '<p>Debes seleccionar los productos</p>';
         buyButtonNewDiv.style.color = 'red';

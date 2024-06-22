@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function cambiarProvincia() {
     let provincia = document.getElementById("provincia").value;
     let ciudad;
-    console.log(ciudad);
     switch (provincia) {
         case "santaFe":
             ciudad = "Rosario";
@@ -63,8 +62,6 @@ function cambiarCiudad(){
 }
 
 function calcularCosto(provincia, ciudad){
-    console.log(provincia);
-    console.log(ciudad);
     let valor;
     switch (ciudad.toLowerCase()) {
         case "rosario":

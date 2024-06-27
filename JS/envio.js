@@ -1,3 +1,7 @@
+function comeBackButton(){
+    window.location.href = 'products.html';
+};
+
 let cart = loadCartFromLocalStorage();
 function renderCart() {
     const totalCart = document.getElementById('total-carrito');

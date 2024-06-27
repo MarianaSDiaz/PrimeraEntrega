@@ -24,23 +24,4 @@ header.style.backgroundColor = '#2b2b2b';
 
 
 footer[0].appendChild(parrafoFooter);
-parrafoFooter.innerHTML = 'DrillHouse - ' + TIME;
-
-/*document.addEventListener('DOMContentLoaded', function() {
-    const buttonToggle = document.getElementById('toggle-button');
-    buttonToggle.className = 'button_grey';
-    buttonToggle.addEventListener('click' , function() {
-        cuerpo.classList.toggle('dark-mode');
-        updateButtonText();
-    })*/
-
-/*    function updateButtonText() {
-        if(cuerpo.classList.contains('dark-mode')) {
-            buttonToggle.textContent = 'Cambiar a modo claro';
-        } else {
-            buttonToggle.textContent = 'Cambiar a modo oscuro';
-        }
-    }
-
-    updateButtonText();
-})*/
+parrafoFooter.innerHTML = 'DrillRide - ' + TIME;
